@@ -4,7 +4,7 @@ password = input("Enter your password: ")
 common_passwords = ["password", "12345678", "1234567890", "password123", "admin123", "123123" , "112233"]
 
 if password.lower() in common_passwords:
-    print("Weak password ❌ (This is a commonly leaked password!)")
+    print("Weak password  (This is a commonly leaked password!)")
 else:
     has_length = len(password) >= 8
     has_digit = any(char.isdigit() for char in password)
